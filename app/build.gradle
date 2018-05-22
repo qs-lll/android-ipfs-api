@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "org.ipfsbox.android_ipfs_api"
+        applicationId "org.ipfsbox.api"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1

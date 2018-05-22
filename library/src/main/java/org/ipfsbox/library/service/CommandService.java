@@ -1,6 +1,7 @@
 package org.ipfsbox.library.service;
 
 import org.ipfsbox.library.entity.Add;
+import org.ipfsbox.library.entity.Bitswap_stat;
 import org.ipfsbox.library.entity.Commands;
 import org.ipfsbox.library.entity.Config;
 import org.ipfsbox.library.entity.Dag;
@@ -55,5 +56,10 @@ public interface CommandService {
     interface dag {
         @GET("dag/get")
         Call<Dag> get(@Query("arg") String arg);
+    }
+
+    interface bitswap {
+        @GET("bitswap/stat")
+        Call<Bitswap_stat> stat();
     }
 }

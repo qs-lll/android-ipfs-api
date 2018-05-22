@@ -97,6 +97,10 @@ public class IpfsBox {
 
     }
 
+    /**
+     * cant use now
+     * @param callback
+     */
     public void update(retrofit2.Callback<String> callback) {
 
     }
@@ -123,5 +127,8 @@ public class IpfsBox {
 
     public Dag dag() {
         return new Dag(retrofit);
+    }
+    public Bitswap bitswap() {
+        return new Bitswap(retrofit);
     }
 }
